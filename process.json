@@ -1,13 +1,27 @@
-    {
-      "name"        : "worker",
-      "script"      : "./index.js",
-      "instances"   : 1,
-      "merge_logs"  : true,
-      "log_date_format" : "YYYY-MM-DD HH:mm Z",
-      "watch": true,
-      "watch_options": {
-        "followSymlinks": true,
-        "usePolling"   : true,
-        "interval"    : 5
-      }
+//TestCode.java
+
+public class TestCode {
+
+    public static void main(String[] args) {
+
+        // sum from smaller to larger order
+        double sum1 = 0;
+
+        for(int i = 3;i<=99;i+=2){
+            sum1 += (1.0/i);
+        }
+
+        System.out.printf("%.6f\n",sum1);
+
+        /////////////////////////////////
+
+        // sum from larger to smaller order
+        double sum2 = 0;
+
+        for(int i = 99;i>=3;i-=2){
+            sum2 += (1.0/i);
+        }
+
+        System.out.printf("%.6f\n",sum2);
     }
+}
